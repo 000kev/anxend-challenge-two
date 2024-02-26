@@ -10,16 +10,17 @@ If you are unfamiliar with any of these please refer to their documentation if n
 
 To get started make sure your have nodejs setup on your system and then:
 
-### Install
+### Install Dependencies
 
 `npm ci`
 
 ### EdgeDB
 
 To setup Edgedb follow the instructions on https://www.edgedb.com/install#linux-debianubuntults to setup the Edgedb cli.
-The project has already been initialised with a starting schema in the `default.esdl` file.
+Then use `edgedb project init` to create an edgedb database and run the migration
+The databse will be populated with a starting schema defined by the `default.esdl` file.
 
-To run a migration run `edgedb migrate`
+If needed you can run a migration with: `edgedb migrate`
 (and to create a new one run `edgedb migration create`)
 
 ### Development
