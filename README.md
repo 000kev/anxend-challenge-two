@@ -2,7 +2,7 @@
 
 Welcome to the Anxend software engineer interview challenge.
 
-This challenge should take around 1-2hrs of your time. We know your time is precious so this is a short challenge and the change for us to show us what you can do.
+This challenge should take around 1-2hrs of your time. We know your time is precious so this is a short challenge and the change for you to show us what you can do.
 
 This project uses typescript (for frontend and backend), react, remix, tailwind and edgedb as it's main dependencies.
 
