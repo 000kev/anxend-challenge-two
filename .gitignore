@@ -1,0 +1,16 @@
+node_modules
+.DS_store
+
+.cache
+
+/build
+/public/build
+/server-build
+.env
+
+
+
+/other/cache.db
+
+dbschema/edgeql-js
+
