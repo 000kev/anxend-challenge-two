@@ -48,6 +48,8 @@ Create a very mini quiz game where the user (eg a student at a school) would pic
 
 Display a stacked bar chart showing mental health questionniare scores for a school. Use a bar to represent each school year. Split the scores in each year into quartiles (any range and total score is fine) and display the quartiles in a stacked bar chart (so each quartile for that year is stacked on top of each other). The visx library would be a good option to help display the results.
 
+To submit your project email us (Axend careers) a link to your public github repo with your completed challenge.
+
 Good luck!
 
 If any of the challenges are unclear please email Anxend careers.
