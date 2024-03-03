@@ -35,24 +35,7 @@ For stretch goals for each of those tasks, consider typical production ready req
 eg. security, validation, tests, progressive enhancement, caching and for the more visual tasks, responsive design and accessibility.
 If you are unfamiliar with any of these best practices (or short of time) instead briefly describe how you might begin to tackle them.
 
-### Project 1:
-
-Create a page with a form to add a school and it's address to the database.
-With that form created add a handful of schools and then display (on the same page or a new one) a list of schools filtered for your home town (CapeTown, London etc..).
-No visual or styling needed for this task.
-
 ### Project 2:
 
 Create a very mini quiz game where the user (eg a student at a school) would pick an image for their avatar and an accessory (hat etc..) Then give them a multiple choice question to answer (with 4 possible answers, 1 correct answer). The quicker they pick the correct answer the higher their score would be. Show their score at the end.
 
-### Project 3:
-
-Display a stacked bar chart showing mental health questionniare scores for a school. Use a bar to represent each school year. Split the scores in each year into quartiles (any range and total score is fine) and display the quartiles in a stacked bar chart (so each quartile for that year is stacked on top of each other). Generate some simple dummy data that has the year and the results and can be used for your chart. The visx library would be a good option to help display the results.
-
-## How to submit your project
-
-To submit your project email us (Axend careers) a link to your public github repo with your completed challenge.
-
-Good luck!
-
-If any of the challenges are unclear please email Anxend careers.
