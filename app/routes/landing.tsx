@@ -1,10 +1,8 @@
-import { Form, useNavigate } from "@remix-run/react";
+import { useFetcher, useSubmit } from "@remix-run/react";
+import { Form } from "@remix-run/react";
 import React from "react";
 import Select from "../components/Select";
-import Owl from "../components/Owl";
-import Deer from "../components/Deer";
-import Skunk from "../components/Skunk";
-import Sonic from "../components/Sonic";
+import displayUser from "../utils/user.util";
 
 export default function LandingPage() {
 
@@ -48,46 +46,17 @@ export default function LandingPage() {
                 })
         }
     }
-
-    const displayUser = (user: { image: string, hat: boolean, glasses: boolean }) => {
-        if (user.image === "placeholder") {
-            return <img className="relative z-0 w-48 h-48" src="/placeholder.png" />
-        } else if (user.image === "owl") {
-            return (
-                user.hat && user.glasses
-                    ? <Owl wearingHat wearingGlasses />
-                    : user.hat ? <Owl wearingHat /> : user.glasses ? <Owl wearingGlasses />
-                    : <Owl />
-            )
-        } else if (user.image === "deer") {
-            return (
-                user.hat && user.glasses
-                    ? <Deer wearingHat wearingGlasses />
-                    : user.hat ? <Deer wearingHat /> : user.glasses ? <Deer wearingGlasses />
-                    : <Deer />
-            )
-        } else if (user.image === "sonic") {
-            return (
-                user.hat && user.glasses
-                    ? <Sonic wearingHat wearingGlasses />
-                    : user.hat ? <Sonic wearingHat /> : user.glasses ? <Sonic wearingGlasses />
-                    : <Sonic />
-            )
-        } else if (user.image === "skunk") {
-            return (
-                user.hat && user.glasses
-                    ? <Skunk wearingHat wearingGlasses />
-                    : user.hat ? <Skunk wearingHat /> : user.glasses ? <Skunk wearingGlasses />
-                    : <Skunk />
-            )
-        }
-
+    
+    const submit = useSubmit();
+    const submitHandler = (e) => {
+        e.preventDefault();
+        submit(default_user, {method: "post", action: "/quiz"});
     }
 
     return (<>
         <h1 className="mt-10 font-montserrat text-5xl text-white drop-shadow-xl">Who's that Pokemon?!</h1>
 
-        <Form action="/landing">
+        <Form method="post" action="/quiz" onSubmit={submitHandler}>
             <span className="flex flex-row">
                 <label className="mt-8 font-montserrat text-xl mr-3 text-white basis-1/4">
                     Your name:
@@ -136,8 +105,7 @@ export default function LandingPage() {
 
             <br />
 
-            <button className="mt-8 inline-block rounded-full bg-anxpurple-700 px-16 py-4 font-montserrat text-white hover:bg-anxwhite-300 hover:text-anxgreen-300 hover:shadow-xl" type="submit">Submit</button>
-
+            <button type="submit" className="mt-8 inline-block rounded-full bg-anxpurple-700 px-16 py-4 font-montserrat text-white hover:bg-anxwhite-300 hover:text-anxgreen-300 hover:shadow-xl">Submit</button>
 
         </Form>
     </>);

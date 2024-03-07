@@ -1,0 +1,44 @@
+{
+    "mcq" : [
+        {
+            "id" : 0,
+            "question" : "What is Ash's main Pokemon?",
+            "options": [
+                ["Charizard", false],
+                ["Bulbasaur", false],
+                ["Squirtle", false],
+                ["Pikachu", true]
+            ]
+        },
+        {
+            "id" : 1,
+            "question" : "What is Misty's main Pokemon?",
+            "options": [
+                ["Staryu", true],
+                ["Piplup", false],
+                ["Squirtle", false],
+                ["Magikarp", false]
+            ]
+        },
+        {
+            "id" : 2,
+            "question" : "What is Brock's main Pokemon?",
+            "options": [
+                ["Geodude", false],
+                ["Onyx", true],
+                ["Roggenrola", false],
+                ["Lycanroc", false]
+            ]
+        },
+        {
+            "id" : 4,
+            "question" : "What is Steven's main Pokemon?",
+            "options": [
+                ["Lucario", false],
+                ["Aggron", false],
+                ["Metagross", true],
+                ["Steelix", false]
+            ]
+        }
+    ]
+}
